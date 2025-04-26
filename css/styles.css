@@ -1,0 +1,162 @@
+#background {
+
+    min-height: 100vh;
+    background-image: url(../pics/background3.avif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+#img1 {
+
+    height: 100vh;
+    background-image: url(../pics/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+#img2 {
+
+  min-height: 700px;
+  background-image: url(../pics/team.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+.navbar {
+
+    padding: 10px;
+
+}
+.navbar-brand {
+
+    color: rgb(210, 3, 68) !important;
+    margin-right: 50px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+}
+.nav-link {
+    
+    margin-right: 50px;
+    font-weight: 600;
+    font-style: normal;
+    color: black !important;
+}
+footer {
+    background-color: rgb(230, 57, 112); 
+    color: white;
+    padding: 20px 0;
+    min-height: 200px;
+}
+.parisienne-regular {
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.indie-flower-regular,h1  {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.sulphur-point-regular, p, h2,h3,label {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Optional: delay the animation */
+  }
+  
+.intro-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Optional: delay the animation */
+  }
+  
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.btn {
+
+    background-color: rgb(230, 57, 112) !important;
+    color: white !important;
+    border: none;
+
+}
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+  }
+.card {
+
+  padding: 10px !important;
+
+}
+.input-group-text {
+
+  background: rgb(195, 17, 73) !important;
+
+}
+.form-control {
+
+  border-color: rgb(195, 17, 73) !important;
+
+}
+.form-select {
+
+  border-color: rgb(195, 17, 73) !important;
+
+}
+.quantity-control button {
+  width: 40px;
+  height: 40px;
+}
+.rating {
+  display: flex;
+  justify-content: center; /* Centers the stars horizontally */
+  flex-direction: row-reverse; /* Reverses the direction of the stars */
+}
+
+.star {
+  font-size: 2rem;
+  color: #d3d3d3;
+  cursor: pointer;
+}
+
+/* Hide the actual radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* When a radio button is checked, the star turns yellow */
+input[type="radio"]:checked ~ label {
+  color: rgb(195, 17, 73);
+}
+
+/* Styling for stars when hovered */
+.star:hover, 
+input[type="radio"]:hover ~ label {
+  color: rgb(195, 17, 73);
+}
+.navbar-toggler {
+
+  color: rgb(195, 17, 73) !important;
+  border-color: rgb(195, 17, 73) !important;
+
+}

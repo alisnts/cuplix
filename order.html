@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Parisienne&family=Sulphur+Point&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <section style="background-color: rgb(154, 0, 49);">
+      <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="index.html">Cup`lix</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sweetpicks.html">Sweet Picks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="order.html">Grab a Box</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ratings.html">Customer Feedback</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto fs-4">
+                <li>
+                   <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl" style="color: rgb(210, 3, 68); margin-right: 10px;"></i></a> 
+                   <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: rgb(210, 3, 68);"></i></a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <div class="container bg-white" style="min-height: 700px;">
+            <div class="row pt-5">
+                
+                <div class="col-lg-6 col-12 p-3 pt-5 fs-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i></span>
+                        <input type="text" class="form-control border" placeholder="Full Name" aria-label="FullName" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-phone fa-lg" style="color: #ffffff;"></i></span>
+                        <input type="tel" class="form-control border" placeholder="Contact Number" aria-label="ContactNumber" aria-describedby="basic-addon1">
+                    </div>
+                    <label for="">Choose Your Flavor</label>
+                    
+                    <select class="form-select fs-5" size="4">
+                        <option value="1">Classic Vanilla Cupcake</option>
+                        <option value="2">Red Velvet Cupcake</option>
+                        <option value="3">Chocolate Fudge Cupcake</option>
+                        <option value="4">Strawberries & Cream Cupcake</option>
+                        <option value="5">Salted Caramel Cupcake</option>
+                        <option value="6">Cookies and Cream Cupcake</option>
+                        <option value="7">Lemon Zest Cupcake</option>
+                        <option value="8">Peanut Butter Cupcake</option>
+                        <option value="9">Coconut Cream Cupcake</option>
+                        <option value="10">Matcha Green Tea Cupcake</option>
+                        <option value="11">Mocha Espresso Cupcake</option>
+                        <option value="12">Banana Nut Cupcake</option>
+                        <option value="13">Carrot Cupcake</option>
+                        <option value="14">Raspberry Swirl Cupcake</option>
+                        <option value="15">Birthday Sprinkle Cupcake</option>
+                      </select>
+                    
+                    <div class="d-flex justify-content-center mt-3">
+                      <select class="form-select form-select-sm w-50 fs-6" aria-label="Small select example" style="margin-right: 10px;">
+                        <option value="" disabled selected>Size</option>
+                        <option value="1">Small (5pcs) ₱180</b></option>
+                        <option value="2">Medium (12pcs) ₱299</option>
+                        <option value="3">Large (20pcs) ₱420</option>
+                      </select>
+                      <button class="btn btn-outline-secondary" onclick="decrease()">−</button>
+                      <input type="number" id="quantity" class="form-control text-center mx-2" value="1" min="1" style="width: 70px;">
+                      <button class="btn btn-outline-secondary" onclick="increase()">+</button>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                    <button type="button" onclick="location.href='#'" class="btn w-50 p-2 fs-5">Place Pickup Order</button>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 col-12 p-3">
+                    <div style="position: relative;"><div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" loading="lazy" allowfullscreen src="https://maps.google.com/maps?q=85+Sto.+Rosario+St%2C+Capas%2C+Tarlac&output=embed"></iframe></div><a href="https://freeairecipegenerator.com" rel="noopener" target="_blank" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">freeairecipegenerator.com</a></div>
+
+                 </div>
+            </div>
+            
+              
+              
+          
+
+              
+          
+            
+          </div>
+          
+          
+          
+
+        
+    </section>
+    
+    <footer class="p-5 ">
+
+    
+
+      <div class="container h-100">
+        <div class="row">
+          <div class="col-lg-4 col-12 text-center">
+            <a class="text-reset text-decoration-none" href="faqs.html" >FAQS</a> <br>
+            <a class="text-reset text-decoration-none" href="about.html" >Our Story</a> <br>
+            <a class="text-reset text-decoration-none" href="custom.html" >Cupcake Customization</a> <br>
+            <a class="text-reset text-decoration-none" href="howWebake.html" >How We Bake</a> <br>
+            <a class="text-reset text-decoration-none" href="instruction.html" >Cupcake Care Instructions</a>
+          </div>
+          <div class="col-lg-4 col-12 mt-4 text-center">
+            <a class="text-white fs-1 parisienne-regular text-reset text-decoration-none" href="index.html" >Cup`lix</a>
+          </div>
+          <div class="col-lg-4 col-12 mt-2 text-center">
+            <a class="text-reset text-decoration-none" href="nutrition.html" >Nutrition Facts</a> <br>
+            <a class="text-reset text-decoration-none" href="Allergen.html" >Allergen Information</a> <br>
+            <a class="text-reset text-decoration-none" href="termsCondition.html" >Terms And Conditions</a> <br>
+            <a class="text-reset text-decoration-none" href="privacy.html" >Privacy Policy</a> <br>
+            <a class="text-reset text-decoration-none" href="career.html" >Career</a>
+
+          </div>
+          
+  
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+
+<script>
+        function increase() {
+          const input = document.getElementById("quantity");
+          input.value = parseInt(input.value) + 1;
+        }
+      
+        function decrease() {
+          const input = document.getElementById("quantity");
+          if (parseInt(input.value) > parseInt(input.min)) {
+            input.value = parseInt(input.value) - 1;
+          }
+        }
+</script>
+<script src="css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
